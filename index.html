@@ -23,6 +23,10 @@
     }
     .hero-fallback{z-index:0}.hero:after{z-index:1;background:radial-gradient(ellipse at 58% 42%,transparent 5%,#08080765 61%,#050504cc 110%),linear-gradient(90deg,#000c 0%,#0002 58%,#0009),linear-gradient(0deg,#000b,transparent 48%)}
     .hero .grain{z-index:1;pointer-events:none}.hero-mark{z-index:2}.hero-copy,.hero-reserve,.scroll-note{z-index:3}
+    .hero-copy{max-width:min(900px,88vw)}.hero h1{font-size:clamp(3.1rem,6.9vw,7.45rem);line-height:1.08;letter-spacing:-.035em}.hero h1 span{overflow:visible;padding-block:.08em;margin-block:-.08em}
+    @media (max-height:720px) and (min-width:761px){.hero-copy{bottom:8%}.hero h1{font-size:clamp(3rem,6.1vw,6.25rem);line-height:1.1}.hero-intro{margin:16px 0}.hero-reserve,.scroll-note{bottom:20px}}
+    @media (max-width:760px){.hero{min-height:640px}.hero-copy{bottom:11%;max-width:88vw}.hero h1{font-size:clamp(2.45rem,11.8vw,3.65rem);line-height:1.15;letter-spacing:-.025em}.hero-intro{max-width:30ch;margin:18px 0}}
+    @media (max-width:380px){.hero h1{font-size:clamp(2.15rem,11vw,2.75rem);line-height:1.18}.hero-copy{bottom:8%}.eyebrow{margin-bottom:14px}}
     @media (prefers-reduced-motion: reduce){.hero-video{display:none}.hero-fallback{filter:brightness(.55) saturate(.72)!important}}
   </style>
 </head>
