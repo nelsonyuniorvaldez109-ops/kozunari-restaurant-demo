@@ -132,13 +132,13 @@ function initReservationForm() {
     event.preventDefault();
 
     if (!form.checkValidity()) {
-      message.textContent = 'Por favor complete todos los campos para preparar su visita.';
+      message.textContent = 'Please complete each field so we can prepare for your visit.';
       form.reportValidity();
       return;
     }
 
     const guestName = new FormData(form).get('name');
-    message.textContent = `Gracias, ${guestName}. Esta es una demo de portafolio: la solicitud de mesa no fue enviada.`;
+    message.textContent = `Thank you, ${guestName}. This is a portfolio demo - your table request has not been transmitted.`;
     form.reset();
   });
 }
